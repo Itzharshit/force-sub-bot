@@ -36,7 +36,7 @@ if (apiid != None and apihash!= None and bottoken != None):
         codexmania = TelegramClient('BotzHub', apiid, apihash).start(bot_token=bottoken)
     except Exception as e:
         print(f"ERROR!\n{str(e)}")
-        print("Bot is quiting...")
+        print("Bot is quiting....")
         exit()
 else:
     print("Environment vars are missing! Kindly recheck.")
