@@ -130,7 +130,7 @@ async def _(event):
     else:
         await event.answer("You are an old member and can speak freely! This isn't for you!", cache_time=0, alert=True)
 
-@codexmania.on(events.NewMessage(pattern="/start"))
+@codexmania.on(events.NewMessage(pattern="/admin"))
 async def strt(event):
     await event.reply(f"Hi. I'm a force subscribe bot made by @{channel}!\n\nSupport Group @codexmaniasupport :)", buttons=[Button.url("Channel", url=f"https://t.me/{channel}"), Button.url("Repository", url="https://github.com/code-x-mania/Force")])
 
