@@ -1,2 +1,2 @@
-python-decouple
+python-3.9.6
 telethon==1.22.0
