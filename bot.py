@@ -33,7 +33,7 @@ except:
 
 if (apiid != None and apihash!= None and bottoken != None):
     try:
-        codexmania = TelegramClient('BotzHub', apiid, apihash).start(bot_token=bottoken)
+        codexmania = TelegramClient('codexmania', apiid, apihash).start(bot_token=bottoken)
     except Exception as e:
         print(f"ERROR!\n{str(e)}")
         print("Bot is quiting....")
@@ -130,7 +130,7 @@ async def _(event):
     else:
         await event.answer("You are an old member and can speak freely! This isn't for you!", cache_time=0, alert=True)
 
-@codexmania.on(events.NewMessage(pattern="/admin"))
+@codexmania.on(events.NewMessage(pattern="/start"))
 async def strt(event):
     await event.reply(f"Hi. I'm a force subscribe bot made by @{channel}!\n\nSupport Group @codexmaniasupport :)", buttons=[Button.url("Channel", url=f"https://t.me/{channel}"), Button.url("Repository", url="https://github.com/code-x-mania/Force")])
 
