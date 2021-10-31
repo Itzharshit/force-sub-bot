@@ -132,7 +132,7 @@ async def _(event):
 
 @codexmania.on(events.NewMessage(pattern="/start"))
 async def strt(event):
-    await event.reply(f"Hi. I'm a force subscribe bot made by @{channel}!\n\nSupport Group @codexmaniasupport :)", buttons=[Button.url("Channel", url=f"https://t.me/{channel}"), Button.url("Repository", url="https://github.com/code-x-mania/Force")])
+    await event.reply(f"Hi. I'm a force subscribe bot made for @{channel}!\n\nSupport Group @codexmaniachat :)", buttons=[Button.url("Channel", url=f"https://t.me/{channel}"), Button.url("Repository", url="https://github.com/code-x-mania/Force")])
 
     
 print("ForceSub Bot has started.\nDo visit @codexmania!")
