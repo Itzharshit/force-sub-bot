@@ -1,1 +1,1 @@
-codexmania: python bot.py
+codexmania: python3 bot.py
