@@ -79,7 +79,7 @@ async def _(event):
         else:
             username = mention
         g = await get_user_join(user.id)
-        if x is True:
+        if g is True:
             msg = welcome_msg.format(mention=mention, title=title, fullname=fullname, username=username, name=name, last=last, channel=f"@{channel}")
             butt = [Button.url("Channel", url=f"https://t.me/{channel}")]
         else:
