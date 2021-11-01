@@ -135,5 +135,5 @@ async def strt(event):
     await event.reply(f"Hi. I'm a force subscribe bot made for @{channel}!\n\nSupport Group @codexmaniachat :)", buttons=[Button.url("Channel", url=f"https://t.me/{channel}"), Button.url("Repository", url="https://github.com/code-x-mania/Force")])
 
     
-print("ForceSub Bot has started.\nDo visit @codexmania!")
+print("ForceSub Bot has started.\n Do visit @codexmania!")
 codexmania.run_until_disconnected()
